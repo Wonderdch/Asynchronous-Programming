@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Wonder\\GitLab\\AsynchronousProgrammingInCSharp\\TapPatterns\\TapPatterns.csproj",
+      "projectUniqueName": "c:\\Wonder\\GitLab\\Asynchronous-Programming\\TapPatterns\\TapPatterns.csproj",
       "projectName": "TapPatterns",
-      "projectPath": "c:\\Wonder\\GitLab\\AsynchronousProgrammingInCSharp\\TapPatterns\\TapPatterns.csproj",
+      "projectPath": "c:\\Wonder\\GitLab\\Asynchronous-Programming\\TapPatterns\\TapPatterns.csproj",
       "packagesPath": "C:\\Users\\temp\\.nuget\\packages\\",
-      "outputPath": "c:\\Wonder\\GitLab\\AsynchronousProgrammingInCSharp\\TapPatterns\\obj\\",
+      "outputPath": "c:\\Wonder\\GitLab\\Asynchronous-Programming\\TapPatterns\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

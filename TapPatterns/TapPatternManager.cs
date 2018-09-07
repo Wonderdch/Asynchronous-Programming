@@ -17,7 +17,7 @@ namespace TapPatterns
 
         public async Task LaunchAsync()
         {
-            await LaunchMiningMethodLocalAsync();
+            await LaunchMiningMethodWithCancellationAsync();
         }
 
 
@@ -57,6 +57,49 @@ namespace TapPatterns
             MiningResultDto result = await RentTimeOnLocalMiningServerTask("SecretToken", 5);
             Console.WriteLine($"mining result: {result.MiningText}");
             Console.WriteLine($"Elapsed seconds: {result.ElapsedSeconds:N}");
+        }
+
+        public async Task LaunchMiningMethodWithCancellationAsync()
+        {
+            var cts = new CancellationTokenSource(1000);
+            Task<MiningResultDto> asyncTask = RentTimeOnMiningServerAsync("SecretToken", 4, cts.Token);
+            try
+            {
+                MiningResultDto result = await asyncTask;
+                Console.WriteLine($"mining result: {result.MiningText}");
+                Console.WriteLine($"Elapsed seconds: {result.ElapsedSeconds:N}");
+                Console.WriteLine("end");
+            }
+            catch (System.Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.GetType().ToString());
+                Console.WriteLine($"Task status: {asyncTask.Status}");
+            }
+        }
+
+        #endregion
+
+        #region TAP advanced
+        public async Task<MiningResultDto> RentTimeOnMiningServerAsync(string authToken, int requestedAmount, CancellationToken cancellationToken)
+        {
+            if (!AuthorizeTheToken(authToken))
+            {
+                throw new Exception("Failed Authorization");
+            }
+            Thread.Sleep(1500);
+            var result = new MiningResultDto();
+            var startTime = DateTime.UtcNow;
+            var asyncTask = CallCoinServiceAsync(requestedAmount);
+            if (cancellationToken.IsCancellationRequested)
+            {
+                cancellationToken.ThrowIfCancellationRequested();
+            }
+            var coinResult = await asyncTask;
+            var elapsedSeconds = (DateTime.UtcNow - startTime).TotalSeconds;
+            result.ElapsedSeconds = elapsedSeconds;
+            result.MiningText = coinResult;
+            return result;
         }
 
         #endregion

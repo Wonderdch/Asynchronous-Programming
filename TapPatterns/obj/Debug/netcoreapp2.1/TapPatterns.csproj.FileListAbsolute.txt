@@ -20,3 +20,14 @@ C:\Wonder\GitLab\AsynchronousProgrammingInCSharp\TapPatterns\obj\Debug\netcoreap
 C:\Wonder\GitLab\AsynchronousProgrammingInCSharp\TapPatterns\obj\Debug\netcoreapp2.1\TapPatterns.AssemblyInfo.cs
 C:\Wonder\GitLab\AsynchronousProgrammingInCSharp\TapPatterns\obj\Debug\netcoreapp2.1\TapPatterns.dll
 C:\Wonder\GitLab\AsynchronousProgrammingInCSharp\TapPatterns\obj\Debug\netcoreapp2.1\TapPatterns.pdb
+C:\Wonder\GitLab\Asynchronous-Programming\TapPatterns\bin\Debug\netcoreapp2.1\TapPatterns.deps.json
+C:\Wonder\GitLab\Asynchronous-Programming\TapPatterns\bin\Debug\netcoreapp2.1\TapPatterns.runtimeconfig.json
+C:\Wonder\GitLab\Asynchronous-Programming\TapPatterns\bin\Debug\netcoreapp2.1\TapPatterns.runtimeconfig.dev.json
+C:\Wonder\GitLab\Asynchronous-Programming\TapPatterns\bin\Debug\netcoreapp2.1\TapPatterns.dll
+C:\Wonder\GitLab\Asynchronous-Programming\TapPatterns\bin\Debug\netcoreapp2.1\TapPatterns.pdb
+C:\Wonder\GitLab\Asynchronous-Programming\TapPatterns\obj\Debug\netcoreapp2.1\TapPatterns.csprojAssemblyReference.cache
+C:\Wonder\GitLab\Asynchronous-Programming\TapPatterns\obj\Debug\netcoreapp2.1\TapPatterns.csproj.CoreCompileInputs.cache
+C:\Wonder\GitLab\Asynchronous-Programming\TapPatterns\obj\Debug\netcoreapp2.1\TapPatterns.AssemblyInfoInputs.cache
+C:\Wonder\GitLab\Asynchronous-Programming\TapPatterns\obj\Debug\netcoreapp2.1\TapPatterns.AssemblyInfo.cs
+C:\Wonder\GitLab\Asynchronous-Programming\TapPatterns\obj\Debug\netcoreapp2.1\TapPatterns.dll
+C:\Wonder\GitLab\Asynchronous-Programming\TapPatterns\obj\Debug\netcoreapp2.1\TapPatterns.pdb
